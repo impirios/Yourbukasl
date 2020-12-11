@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Test API End Points</h1>
+    <form action="/api/signup" method="post">
+        <label for="uname">User name</label><br>
+        <input type="text" name="Username" placeholder="Enter Username" required><br>
+    
+        <label for="email">Email</label><br>
+        <input type="email" name="Email" placeholder="Enter Email" required><br>
+
+        <label for="Dob">Date of birth</label><br>
+        <input type="date" name="Dob" placeholder="Enter Username" required><br>
+
+        <label for="phno">Phone number</label><br>
+        <input type="text" name="Phonenumber" placeholder="Enter Username" required><br>
+
+        <label for="pass">Password</label><br>
+        <input type="password" name="Password" placeholder="Enter Username" required><br><br><br>
+        <input type="submit">
+    </form>
+    <br><br><br>
+    <a href="users" class="button">View Users</a>
+
+</body>
+
+</html>

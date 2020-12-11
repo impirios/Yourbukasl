@@ -23,7 +23,7 @@ const options = {
 };
 
 
-const uri = "Enter your mongo url";
+const uri = "mongodb+srv://impirios:LAPDHAPD@cluster0.vwylo.mongodb.net/test?retryWrites=true&w=majority";
 
 Mongoose.connect(uri,options);
 

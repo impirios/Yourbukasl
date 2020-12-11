@@ -30,6 +30,10 @@ Mongoose.connect(uri,options);
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json());
 
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname+'/index.html'));
+});
+
 app.get('/api/signup',(req,res)=>{
     res.sendFile(path.join(__dirname+'/signup.html'));
 

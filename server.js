@@ -70,7 +70,7 @@ app.post('/api/signup',function(req,res,next)
         console.log(user);
         console.log("help");
         res.status(200);
-        return res.send({usercreated:true});
+        return res.send({usercreated:true,token:user._id});
     }).catch(err=>{
      console.log(err);
     if(err!=null)
@@ -120,6 +120,18 @@ app.post('/api/login',function(req,res)
     }); 
 
 });
+app.post('/api/user/',(req,res)=>{
+    User.findById(req.body.id,(err,user)=>{
+        if(err||user===null){
+            res.status(404);
+            return res.send("User not found");
+        }
+        res.status(200);
+        return res.send(user);
+    });
+
+});
+
 
 app.listen(process.env.PORT||3000,()=>{
     console.log("Server started");

@@ -19,7 +19,10 @@
 </head>
 <body>
     <h1>Test API End Points</h1>
-    <form action="/api/signup" method="post">
+    <form action="/api/signup" method="post" enctype="multipart/form-data">
+        <label for="image">Upload a cover Image for your blog</label> <br>
+        <input type="file" id="upload" name="upload" accept="image/*" required> <br>
+
         <label for="uname">User name</label><br>
         <input type="text" name="Username" placeholder="Enter Username" required><br>
     

@@ -35,5 +35,17 @@
         <input type="submit" value="Get user Info">
     </form>
 
+    <h1>Testing user linking</h1>
+    <p>by clicking submit you will add user 2's profile picture to user 1's contact list</p>
+    <form action="/api/linkusers/" method="POST">
+        <label for="id1"> Enter user 1 token </label>
+        <input type="text" name="id1" placeholder="Enter your token ">
+
+        <label for="id1"> Enter user 2 token</label>
+        <input type="text" name="id2" placeholder="Enter your token ">
+
+        <input type="submit" value="Link users">
+    </form>
+
 </body>
 </html>

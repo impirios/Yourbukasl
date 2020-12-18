@@ -26,7 +26,13 @@ let userSchema = new mongoose.Schema({
     Password:{
         type:String,
         required:true
-    }
+    },
+    Profile:{
+        type:String
+    },
+    ContactList:[{
+        type:String
+    }]
 });
 
 

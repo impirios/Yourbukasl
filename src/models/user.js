@@ -20,7 +20,7 @@ let userSchema = new mongoose.Schema({
         required:true
     },
     DOB:{
-        type:Date,
+        type:String,
         required:true
     },
     Password:{
@@ -45,3 +45,4 @@ userSchema.path('Email').validate(async(email)=>{
 
 
 module.exports = mongoose.model('User',userSchema);
+

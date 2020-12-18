@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Test API End Points</h1>
+    <form action="/api/uploadCard" method="post" enctype="multipart/form-data">
+        <label for="image">Upload a cover Image for your blog</label> <br>
+        <input type="file" id="upload" name="upload" accept="image/*" required> <br>
+
+        <input type="radio" id="Premium" name="category" value="Premium">
+        <label for="Premium">Premium</label><br>
+        <input type="radio" id="Basic" name="category" value="Basic">
+        <label for="Basic">Basic</label><br>
+        <input type="submit">
+    </form>
+    <br><br><br>
+
+</body>
+
+</html>
